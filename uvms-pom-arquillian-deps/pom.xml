@@ -4,13 +4,13 @@
     <parent>
         <groupId>fish.focus.maven</groupId>
         <artifactId>focus-pom</artifactId>
-        <version>2.1</version>
+        <version>2.5</version>
         <relativePath />
     </parent>
 
     <groupId>fish.focus.uvms.maven</groupId>
     <artifactId>uvms-pom-arquillian-deps</artifactId>
-    <version>3.9-SNAPSHOT</version>
+    <version>3.15</version>
     <description>arquillian test dependencies for UVMS pom </description>
     <packaging>pom</packaging>
 
