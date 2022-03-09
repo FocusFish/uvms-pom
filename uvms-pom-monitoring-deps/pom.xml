@@ -10,11 +10,11 @@
     
 	<groupId>fish.focus.uvms.maven</groupId>
 	<artifactId>uvms-pom-monitoring-deps</artifactId>
-	<version>3.16</version>
+	<version>3.17</version>
 	<description>Monitoring dependencies for UVMS pom </description>
 	<packaging>pom</packaging>
 	<properties>
-		<uvms-pom.monitoring.deps.version.javamelody>1.85.0-UVMS</uvms-pom.monitoring.deps.version.javamelody>
+		<uvms-pom.monitoring.deps.version.javamelody>1.90.0</uvms-pom.monitoring.deps.version.javamelody>
 		<uvms-pom.monitoring.deps.version.jrobin>1.5.9</uvms-pom.monitoring.deps.version.jrobin>
 	</properties>
 	<dependencies>
