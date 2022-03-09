@@ -10,7 +10,7 @@
     
 	<groupId>fish.focus.uvms.maven</groupId>
 	<artifactId>uvms-pom-test-deps</artifactId>
-	<version>3.17</version>
+	<version>3.18</version>
 	<description>Test dependencies for UVMS pom </description>
 	<packaging>pom</packaging>
 
@@ -18,7 +18,6 @@
 		<uvms-pom.test.deps.junit.version>4.12</uvms-pom.test.deps.junit.version>
 		<uvms-pom.test.deps.mockito.version>3.1.0</uvms-pom.test.deps.mockito.version>
 		<uvms-pom.test.deps.easycoverage>2.3.1</uvms-pom.test.deps.easycoverage>
-		<uvms-pom.test.deps.contiperf>2.4.4</uvms-pom.test.deps.contiperf>
 		<uvms-pom.test.deps.powermock.version>2.0.4</uvms-pom.test.deps.powermock.version>
 	</properties>
 	<dependencies>
@@ -62,11 +61,6 @@
 					<artifactId>*</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.databene</groupId>
-			<artifactId>contiperf</artifactId>
-			<version>${uvms-pom.test.deps.contiperf}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
