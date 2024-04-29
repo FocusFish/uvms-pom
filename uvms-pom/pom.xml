@@ -21,7 +21,7 @@ License along with the IFDM Suite. If not, see <http://www.gnu.org/licenses />. 
     
     <groupId>fish.focus.uvms.maven</groupId>
     <artifactId>uvms-pom</artifactId>
-    <version>3.20</version>
+    <version>3.21</version>
     <packaging>pom</packaging>
       
     <!-- ================================================================ -->
@@ -125,7 +125,7 @@ License along with the IFDM Suite. If not, see <http://www.gnu.org/licenses />. 
         <dependency>
             <groupId>fish.focus.uvms.maven</groupId>
             <artifactId>uvms-pom-test-deps</artifactId>
-            <version>3.20</version>
+            <version>3.21</version>
             <type>pom</type>
             <scope>test</scope>
         </dependency>
@@ -198,6 +198,7 @@ License along with the IFDM Suite. If not, see <http://www.gnu.org/licenses />. 
                             </execution>
                         </executions>
                         <configuration>
+                            <autoCreateCustomNetworks>true</autoCreateCustomNetworks>
                             <images>
                                 <image>
                                     <alias>postgres</alias>
@@ -205,6 +206,9 @@ License along with the IFDM Suite. If not, see <http://www.gnu.org/licenses />. 
                                     <run>
                                         <net>bridge</net>
                                         <namingStrategy>none</namingStrategy>
+                                        <network>
+                                            <name>uvms-net</name>
+                                        </network>
                                         <ports>
                                             <port>15432:5432</port>
                                         </ports>
@@ -221,9 +225,9 @@ License along with the IFDM Suite. If not, see <http://www.gnu.org/licenses />. 
                                     <run>
                                         <net>bridge</net>
                                         <namingStrategy>none</namingStrategy>
-                                        <links>
-                                            <link>postgres:postgres</link>
-                                        </links>
+                                        <network>
+                                            <name>uvms-net</name>
+                                        </network>
                                         <ports>
                                             <port>9990:9990</port>
                                             <port>28787:8787</port>
