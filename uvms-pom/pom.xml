@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- ~ Developed with the contribution of the European Commission - Directorate 
-General for Maritime Affairs and Fisheries ~ © European Union, 2015-2016. 
-~ ~ This file is part of the Integrated Fisheries Data Management (IFDM) 
-Suite. The IFDM Suite is free software: you can ~ redistribute it and/or 
-modify it under the terms of the GNU General Public License as published 
-by the ~ Free Software Foundation, either version 3 of the License, or any 
-later version. The IFDM Suite is distributed in ~ the hope that it will be 
-useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY 
-or ~ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License 
-for more details. You should have received a ~ copy of the GNU General Public 
+<!-- ~ Developed with the contribution of the European Commission - Directorate
+General for Maritime Affairs and Fisheries ~ © European Union, 2015-2016.
+~ ~ This file is part of the Integrated Fisheries Data Management (IFDM)
+Suite. The IFDM Suite is free software: you can ~ redistribute it and/or
+modify it under the terms of the GNU General Public License as published
+by the ~ Free Software Foundation, either version 3 of the License, or any
+later version. The IFDM Suite is distributed in ~ the hope that it will be
+useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+or ~ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License
+for more details. You should have received a ~ copy of the GNU General Public
 License along with the IFDM Suite. If not, see <http://www.gnu.org/licenses />. -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>fish.focus.maven</groupId>
         <artifactId>focus-pom</artifactId>
-        <version>2.6</version>
+        <version>2.8</version>
         <relativePath />
     </parent>
-    
+
     <groupId>fish.focus.uvms.maven</groupId>
     <artifactId>uvms-pom</artifactId>
     <version>3.22-SNAPSHOT</version>
     <packaging>pom</packaging>
-      
+
     <!-- ================================================================ -->
     <!-- Project specific settings, should be redefined in project's POMs -->
     <!-- ================================================================ -->
@@ -35,25 +35,25 @@ License along with the IFDM Suite. If not, see <http://www.gnu.org/licenses />. 
     <!-- ================================================================ -->
     <!-- End Project specific settings                                    -->
     <!-- ================================================================ -->
-    
+
 
     <properties>
-                
+
         <!-- ================= -->
         <!-- Global Properties -->
         <!-- ================= -->
         <context.root>unionvms/</context.root>
-        
+
         <!-- Maven default properties -->
         <project.scm.id>github</project.scm.id>
         <scm.connection>scm:git:https://github.com/FocusFish/uvms-pom.git</scm.connection>
         <scm.url>scm:git:https://github.com/FocusFish/uvms-pom.git</scm.url>
-        
-        
+
+
         <!-- =================================================== -->
         <!-- Common project dependency manage version properties -->
         <!-- =================================================== -->
-        
+
         <!--Depmanagement -->
         <uvms-pom.jakartaee.version>8.0.0</uvms-pom.jakartaee.version>
         <uvms-pom.microprofile.version>4.0.1</uvms-pom.microprofile.version>
@@ -61,13 +61,13 @@ License along with the IFDM Suite. If not, see <http://www.gnu.org/licenses />. 
         <uvms-pom.commons.collections>3.2.2</uvms-pom.commons.collections>
         <uvms-pom.commons.lang.version>2.6</uvms-pom.commons.lang.version>
         <uvms-pom.commons.lang3.version>3.9</uvms-pom.commons.lang3.version>
-        
+
         <!-- ======= -->
-        <!-- Plugins -->        
+        <!-- Plugins -->
         <!-- ======= -->
-        
+
         <!-- ======================= -->
-        <!-- Default docker settings -->        
+        <!-- Default docker settings -->
         <!-- ======================= -->
         <docker.dev.version>4.1.0</docker.dev.version>
         <docker.dev.start.phase>none</docker.dev.start.phase>
@@ -79,7 +79,7 @@ License along with the IFDM Suite. If not, see <http://www.gnu.org/licenses />. 
         <docker.liquibase.db.user>SET_ME</docker.liquibase.db.user>
         <docker.liquibase.db.passwd>SET_ME</docker.liquibase.db.passwd>
     </properties>
-     
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -112,7 +112,7 @@ License along with the IFDM Suite. If not, see <http://www.gnu.org/licenses />. 
             </dependency>
         </dependencies>
     </dependencyManagement>
-    
+
     <dependencies>
         <!-- Include default logging dependencies -->
         <dependency>
@@ -130,7 +130,7 @@ License along with the IFDM Suite. If not, see <http://www.gnu.org/licenses />. 
             <scope>test</scope>
         </dependency>
     </dependencies>
-   
+
     <build>
         <plugins>
             <plugin>
@@ -144,7 +144,7 @@ License along with the IFDM Suite. If not, see <http://www.gnu.org/licenses />. 
                         </goals>
                     </execution>
                 </executions>
-            </plugin>        
+            </plugin>
         </plugins>
     </build>
     <profiles>
@@ -274,7 +274,7 @@ License along with the IFDM Suite. If not, see <http://www.gnu.org/licenses />. 
                         </configuration>
                         <executions>
                             <execution>
-                                <phase>${docker.liquibase.phase}</phase>                                                                  
+                                <phase>${docker.liquibase.phase}</phase>
                                 <goals>
                                     <goal>update</goal>
                                 </goals>
