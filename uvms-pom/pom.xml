@@ -153,7 +153,7 @@ License along with the IFDM Suite. If not, see <http://www.gnu.org/licenses />. 
             <properties>
                 <driver.groupId>org.postgresql</driver.groupId>
                 <driver.artifactId>postgresql</driver.artifactId>
-                <driver.version>42.3.1</driver.version>
+                <driver.version>42.7.3</driver.version>
             </properties>
             <dependencies>
                 <dependency>
