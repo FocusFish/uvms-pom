@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>fish.focus.maven</groupId>
-		<artifactId>focus-pom</artifactId>
-		<version>2.8</version>
-		<relativePath />
-	</parent>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>fish.focus.maven</groupId>
+        <artifactId>focus-pom</artifactId>
+        <version>2.8</version>
+        <relativePath/>
+    </parent>
 
-	<groupId>fish.focus.uvms.maven</groupId>
-	<artifactId>uvms-pom-java11-deps</artifactId>
-	<version>3.23-SNAPSHOT</version>
-	<description>Needed dependencies that has been removed from the standard package in java 11 </description>
-	<packaging>pom</packaging>
+    <groupId>fish.focus.uvms.maven</groupId>
+    <artifactId>uvms-pom-java11-deps</artifactId>
+    <version>3.23-SNAPSHOT</version>
+    <description>Needed dependencies that has been removed from the standard package in java 11</description>
+    <packaging>pom</packaging>
 
-	<properties>
-		<jakarta.xml.ws.version>2.3.3</jakarta.xml.ws.version>
-		<jakarta.activation.version>1.2.2</jakarta.activation.version>
-	</properties>
-	<dependencies>
-		<dependency>
-			<groupId>jakarta.xml.ws</groupId>
-			<artifactId>jakarta.xml.ws-api</artifactId>
-			<version>${jakarta.xml.ws.version}</version>
-		</dependency>
-		<dependency>
-		    <groupId>jakarta.activation</groupId>
-		    <artifactId>jakarta.activation-api</artifactId>
-		    <version>${jakarta.activation.version}</version>
-		</dependency>
-	</dependencies>
+    <properties>
+        <jakarta.xml.ws.version>2.3.3</jakarta.xml.ws.version>
+        <jakarta.activation.version>1.2.2</jakarta.activation.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>jakarta.xml.ws</groupId>
+            <artifactId>jakarta.xml.ws-api</artifactId>
+            <version>${jakarta.xml.ws.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.activation</groupId>
+            <artifactId>jakarta.activation-api</artifactId>
+            <version>${jakarta.activation.version}</version>
+        </dependency>
+    </dependencies>
 </project>
 
 
