@@ -10,13 +10,14 @@ useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTA
 or ~ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License
 for more details. You should have received a ~ copy of the GNU General Public
 License along with the IFDM Suite. If not, see <http://www.gnu.org/licenses />. -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>fish.focus.maven</groupId>
         <artifactId>focus-pom</artifactId>
         <version>2.8</version>
-        <relativePath />
+        <relativePath/>
     </parent>
 
     <groupId>fish.focus.uvms.maven</groupId>
@@ -238,16 +239,18 @@ License along with the IFDM Suite. If not, see <http://www.gnu.org/licenses />. 
                                         </ports>
                                         <wait>
                                             <http>
-                                               <url>http://localhost:28080</url>
-                                               <method>GET</method>
-                                               <status>200</status>
+                                                <url>http://localhost:28080</url>
+                                                <method>GET</method>
+                                                <status>200</status>
                                             </http>
                                             <time>300000</time>
                                             <kill>5000</kill>
                                             <shutdown>5000</shutdown>
                                         </wait>
                                         <cmd>
-                                            <shell>/opt/jboss/start.sh /opt/jboss/wildfly/bin/standalone.sh -c standalone-full.xml -b 0.0.0.0 -bmanagement 0.0.0.0 --debug *:8787</shell>
+                                            <shell>/opt/jboss/start.sh /opt/jboss/wildfly/bin/standalone.sh -c
+                                                standalone-full.xml -b 0.0.0.0 -bmanagement 0.0.0.0 --debug *:8787
+                                            </shell>
                                         </cmd>
                                         <dependsOn>
                                             <container>postgres</container>
