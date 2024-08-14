@@ -20,6 +20,7 @@
         <uvms-pom.test.deps.mockito.version>3.1.0</uvms-pom.test.deps.mockito.version>
         <uvms-pom.test.deps.easycoverage>2.3.1</uvms-pom.test.deps.easycoverage>
         <uvms-pom.test.deps.powermock.version>2.0.9</uvms-pom.test.deps.powermock.version>
+        <uvms-pom.test.deps.awaitility.version>4.2.2</uvms-pom.test.deps.awaitility.version>
     </properties>
     <dependencies>
         <!-- Test -->
@@ -67,6 +68,11 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>2.0.16</version>
+        </dependency>
+        <dependency>
+            <groupId>org.awaitility</groupId>
+            <artifactId>awaitility</artifactId>
+            <version>${uvms-pom.test.deps.awaitility.version}</version>
         </dependency>
     </dependencies>
 </project>
