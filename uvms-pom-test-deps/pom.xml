@@ -21,9 +21,20 @@
         <uvms-pom.test.deps.easycoverage>2.3.1</uvms-pom.test.deps.easycoverage>
         <uvms-pom.test.deps.powermock.version>2.0.9</uvms-pom.test.deps.powermock.version>
         <uvms-pom.test.deps.awaitility.version>4.2.2</uvms-pom.test.deps.awaitility.version>
+        <uvms-pom.test.deps.hamcrest.version>3.0</uvms-pom.test.deps.hamcrest.version>
     </properties>
     <dependencies>
         <!-- Test -->
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest</artifactId>
+            <version>${uvms-pom.test.deps.hamcrest.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-library</artifactId>
+            <version>${uvms-pom.test.deps.hamcrest.version}</version>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
