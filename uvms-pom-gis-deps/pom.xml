@@ -1,62 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>fish.focus.maven</groupId>
-		<artifactId>focus-pom</artifactId>
-		<version>2.8</version>
-		<relativePath />
-	</parent>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>fish.focus.maven</groupId>
+        <artifactId>focus-pom</artifactId>
+        <version>2.8</version>
+        <relativePath/>
+    </parent>
 
-	<groupId>fish.focus.uvms.maven</groupId>
-	<artifactId>uvms-pom-gis-deps</artifactId>
-	<version>3.22</version>
-	<description>Jpa gis dependencies for UVMS pom </description>
-	<packaging>pom</packaging>
+    <groupId>fish.focus.uvms.maven</groupId>
+    <artifactId>uvms-pom-gis-deps</artifactId>
+    <version>3.23</version>
+    <description>Jpa gis dependencies for UVMS pom</description>
+    <packaging>pom</packaging>
 
-	<properties>
-		<uvms-pom.gis.deps.hibernate.version>5.4.24.Final</uvms-pom.gis.deps.hibernate.version>
-		<uvms-pom.gis.deps.hibernate.spatial.version>5.4.1.Final</uvms-pom.gis.deps.hibernate.spatial.version>
-		<uvms-pom.gis.deps.postgresql.version>42.3.9</uvms-pom.gis.deps.postgresql.version>
-		<uvms-pom.gis.deps.postgis.version>2.5.0</uvms-pom.gis.deps.postgis.version>
-		<uvms-pom.gis.deps.jts.version>1.16.1</uvms-pom.gis.deps.jts.version>
-	</properties>
+    <properties>
+        <uvms-pom.gis.deps.hibernate.version>5.4.24.Final</uvms-pom.gis.deps.hibernate.version>
+        <uvms-pom.gis.deps.hibernate.spatial.version>5.4.1.Final</uvms-pom.gis.deps.hibernate.spatial.version>
+        <uvms-pom.gis.deps.postgresql.version>42.7.3</uvms-pom.gis.deps.postgresql.version>
+        <uvms-pom.gis.deps.postgis.version>2.5.0</uvms-pom.gis.deps.postgis.version>
+        <uvms-pom.gis.deps.jts.version>1.16.1</uvms-pom.gis.deps.jts.version>
+    </properties>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-spatial</artifactId>
-			<version>${uvms-pom.gis.deps.hibernate.spatial.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-core</artifactId>
-			<version>${uvms-pom.gis.deps.hibernate.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-envers</artifactId>
-			<version>${uvms-pom.gis.deps.hibernate.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-entitymanager</artifactId>
-			<version>${uvms-pom.gis.deps.hibernate.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>net.postgis</groupId>
-			<artifactId>postgis-jdbc</artifactId>
-			<version>${uvms-pom.gis.deps.postgis.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>${uvms-pom.gis.deps.postgresql.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.locationtech.jts</groupId>
-			<artifactId>jts-core</artifactId>
-			<version>${uvms-pom.gis.deps.jts.version}</version>
-		</dependency>
-	</dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-spatial</artifactId>
+            <version>${uvms-pom.gis.deps.hibernate.spatial.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${uvms-pom.gis.deps.hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-envers</artifactId>
+            <version>${uvms-pom.gis.deps.hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${uvms-pom.gis.deps.hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.postgis</groupId>
+            <artifactId>postgis-jdbc</artifactId>
+            <version>${uvms-pom.gis.deps.postgis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${uvms-pom.gis.deps.postgresql.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.locationtech.jts</groupId>
+            <artifactId>jts-core</artifactId>
+            <version>${uvms-pom.gis.deps.jts.version}</version>
+        </dependency>
+    </dependencies>
 </project>

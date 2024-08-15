@@ -1,73 +1,80 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>fish.focus.maven</groupId>
-		<artifactId>focus-pom</artifactId>
-		<version>2.8</version>
-		<relativePath />
-	</parent>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>fish.focus.maven</groupId>
+        <artifactId>focus-pom</artifactId>
+        <version>2.8</version>
+        <relativePath/>
+    </parent>
 
-	<groupId>fish.focus.uvms.maven</groupId>
-	<artifactId>uvms-pom-test-deps</artifactId>
-	<version>3.22</version>
-	<description>Test dependencies for UVMS pom </description>
-	<packaging>pom</packaging>
+    <groupId>fish.focus.uvms.maven</groupId>
+    <artifactId>uvms-pom-test-deps</artifactId>
+    <version>3.23</version>
+    <description>Test dependencies for UVMS pom</description>
+    <packaging>pom</packaging>
 
-	<properties>
-		<uvms-pom.test.deps.junit.version>4.13.1</uvms-pom.test.deps.junit.version>
-		<uvms-pom.test.deps.mockito.version>3.1.0</uvms-pom.test.deps.mockito.version>
-		<uvms-pom.test.deps.easycoverage>2.3.1</uvms-pom.test.deps.easycoverage>
-		<uvms-pom.test.deps.powermock.version>2.0.4</uvms-pom.test.deps.powermock.version>
-	</properties>
-	<dependencies>
-		<!-- Test -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>${uvms-pom.test.deps.junit.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mockito</groupId>
-			<artifactId>mockito-core</artifactId>
-			<version>${uvms-pom.test.deps.mockito.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.powermock</groupId>
-			<artifactId>powermock-module-junit4</artifactId>
-			<version>${uvms-pom.test.deps.powermock.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.powermock</groupId>
-			<artifactId>powermock-api-mockito2</artifactId>
-			<version>${uvms-pom.test.deps.powermock.version}</version>
-		</dependency>
-		<dependency>				<!--  This one is here to resolve a dependency conflict involving junit, powermock and hibernate    -->
-			<groupId>net.bytebuddy</groupId>
-			<artifactId>byte-buddy</artifactId>
-			<version>1.10.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.tocea.easycoverage</groupId>
-			<artifactId>easyCoverage4J-junit</artifactId>
-			<version>${uvms-pom.test.deps.easycoverage}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>junit</groupId>
-					<artifactId>junit</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>ch.qos.logback</groupId>
-					<artifactId>*</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-simple</artifactId>
-			<version>1.7.30</version>
-		</dependency>
-	</dependencies>
+    <properties>
+        <uvms-pom.test.deps.junit.version>4.13.2</uvms-pom.test.deps.junit.version>
+        <uvms-pom.test.deps.mockito.version>3.1.0</uvms-pom.test.deps.mockito.version>
+        <uvms-pom.test.deps.easycoverage>2.3.1</uvms-pom.test.deps.easycoverage>
+        <uvms-pom.test.deps.powermock.version>2.0.9</uvms-pom.test.deps.powermock.version>
+        <uvms-pom.test.deps.awaitility.version>4.2.2</uvms-pom.test.deps.awaitility.version>
+    </properties>
+    <dependencies>
+        <!-- Test -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${uvms-pom.test.deps.junit.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>${uvms-pom.test.deps.mockito.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-module-junit4</artifactId>
+            <version>${uvms-pom.test.deps.powermock.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-api-mockito2</artifactId>
+            <version>${uvms-pom.test.deps.powermock.version}</version>
+        </dependency>
+        <dependency>                <!--  This one is here to resolve a dependency conflict involving junit, powermock and hibernate    -->
+            <groupId>net.bytebuddy</groupId>
+            <artifactId>byte-buddy</artifactId>
+            <version>1.10.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.tocea.easycoverage</groupId>
+            <artifactId>easyCoverage4J-junit</artifactId>
+            <version>${uvms-pom.test.deps.easycoverage}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>ch.qos.logback</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>2.0.16</version>
+        </dependency>
+        <dependency>
+            <groupId>org.awaitility</groupId>
+            <artifactId>awaitility</artifactId>
+            <version>${uvms-pom.test.deps.awaitility.version}</version>
+        </dependency>
+    </dependencies>
 </project>
 
 
