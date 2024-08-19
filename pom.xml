@@ -22,7 +22,7 @@ License along with the IFDM Suite. If not, see <http://www.gnu.org/licenses />. 
 
     <groupId>fish.focus.uvms.maven</groupId>
     <artifactId>uvms-pom-aggregate</artifactId>
-    <version>3.24</version>
+    <version>3.25-SNAPSHOT</version>
     <packaging>pom</packaging>
     <properties>
         <project.scm.id>github</project.scm.id>
