@@ -17,7 +17,7 @@
 
     <properties>
         <uvms-pom.test.deps.junit.version>4.13.2</uvms-pom.test.deps.junit.version>
-        <uvms-pom.test.deps.mockito.version>3.1.0</uvms-pom.test.deps.mockito.version>
+        <uvms-pom.test.deps.mockito.version>5.14.2</uvms-pom.test.deps.mockito.version>
         <uvms-pom.test.deps.easycoverage>2.3.1</uvms-pom.test.deps.easycoverage>
         <uvms-pom.test.deps.powermock.version>2.0.9</uvms-pom.test.deps.powermock.version>
         <uvms-pom.test.deps.awaitility.version>4.2.2</uvms-pom.test.deps.awaitility.version>
