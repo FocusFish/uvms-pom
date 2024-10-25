@@ -11,7 +11,7 @@
 
     <groupId>fish.focus.uvms.maven</groupId>
     <artifactId>uvms-pom-test-deps</artifactId>
-    <version>3.25</version>
+    <version>3.26-SNAPSHOT</version>
     <description>Test dependencies for UVMS pom</description>
     <packaging>pom</packaging>
 
