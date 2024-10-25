@@ -58,7 +58,7 @@
         <dependency>                <!--  This one is here to resolve a dependency conflict involving junit, powermock and hibernate    -->
             <groupId>net.bytebuddy</groupId>
             <artifactId>byte-buddy</artifactId>
-            <version>1.10.2</version>
+            <version>1.15.7</version>
         </dependency>
         <dependency>
             <groupId>com.tocea.easycoverage</groupId>
