@@ -16,7 +16,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <uvms-pom.arquillian.deps.arquillian>1.5.0.Final</uvms-pom.arquillian.deps.arquillian>
+        <uvms-pom.arquillian.deps.arquillian>1.9.2.Final</uvms-pom.arquillian.deps.arquillian>
         <uvms-pom.arquillian.deps.arquillian.suite.extension>1.2.2</uvms-pom.arquillian.deps.arquillian.suite.extension>
         <uvms-pom.arquillian.deps.arquillian_jacoco>1.1.0</uvms-pom.arquillian.deps.arquillian_jacoco>
         <uvms-pom.arquillian.deps.jacoco>0.8.12</uvms-pom.arquillian.deps.jacoco>
