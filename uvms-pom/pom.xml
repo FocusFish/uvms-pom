@@ -22,7 +22,7 @@ License along with the IFDM Suite. If not, see <http://www.gnu.org/licenses />. 
 
     <groupId>fish.focus.uvms.maven</groupId>
     <artifactId>uvms-pom</artifactId>
-    <version>3.28</version>
+    <version>3.29-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <!-- ================================================================ -->
@@ -126,7 +126,7 @@ License along with the IFDM Suite. If not, see <http://www.gnu.org/licenses />. 
         <dependency>
             <groupId>fish.focus.uvms.maven</groupId>
             <artifactId>uvms-pom-test-deps</artifactId>
-            <version>3.28</version>
+            <version>3.29-SNAPSHOT</version>
             <type>pom</type>
             <scope>test</scope>
         </dependency>
