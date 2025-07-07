@@ -11,7 +11,7 @@
 
     <groupId>fish.focus.uvms.maven</groupId>
     <artifactId>uvms-pom-arquillian-deps</artifactId>
-    <version>3.32</version>
+    <version>3.33-SNAPSHOT</version>
     <description>arquillian test dependencies for UVMS pom</description>
     <packaging>pom</packaging>
 
