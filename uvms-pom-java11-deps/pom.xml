@@ -5,13 +5,13 @@
     <parent>
         <groupId>fish.focus.maven</groupId>
         <artifactId>focus-pom</artifactId>
-        <version>2.11</version>
+        <version>2.13</version>
         <relativePath/>
     </parent>
 
     <groupId>fish.focus.uvms.maven</groupId>
     <artifactId>uvms-pom-java11-deps</artifactId>
-    <version>3.31</version>
+    <version>3.32</version>
     <description>Needed dependencies that has been removed from the standard package in java 11</description>
     <packaging>pom</packaging>
 

@@ -5,13 +5,13 @@
     <parent>
         <groupId>fish.focus.maven</groupId>
         <artifactId>focus-pom</artifactId>
-        <version>2.11</version>
+        <version>2.13</version>
         <relativePath/>
     </parent>
 
     <groupId>fish.focus.uvms.maven</groupId>
     <artifactId>uvms-pom-monitoring-deps</artifactId>
-    <version>3.31</version>
+    <version>3.32</version>
     <description>Monitoring dependencies for UVMS pom</description>
     <packaging>pom</packaging>
     <properties>
