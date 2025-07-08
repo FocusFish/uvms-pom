@@ -11,6 +11,7 @@
 
     <groupId>fish.focus.uvms.maven</groupId>
     <artifactId>uvms-pom-gis-deps</artifactId>
+    <name>uvms-pom-gis-deps</name>
     <version>3.33-SNAPSHOT</version>
     <description>Jpa gis dependencies for UVMS pom</description>
     <packaging>pom</packaging>
