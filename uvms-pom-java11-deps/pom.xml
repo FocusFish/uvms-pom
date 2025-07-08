@@ -12,7 +12,7 @@
     <groupId>fish.focus.uvms.maven</groupId>
     <artifactId>uvms-pom-java11-deps</artifactId>
     <name>uvms-pom-java11-deps</name>
-    <version>3.33</version>
+    <version>3.34-SNAPSHOT</version>
     <description>Needed dependencies that has been removed from the standard package in java 11</description>
     <packaging>pom</packaging>
 
